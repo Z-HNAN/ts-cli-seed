@@ -1,13 +1,16 @@
 {
-  "name": "package-seed-simplify",
+  "name": "ts-cli-seed",
   "version": "1.0.0",
-  "description": "publish npm use typescript seed project",
+  "description": "typescript cli jest tsc",
   "main": "./dist/index.js",
   "types": "./dist/types/src/index.d.ts",
+  "bin": {
+    "ts-cli-seed": "./dist/index.js"
+  },
   "private": false,
   "publisher": "",
   "scripts": {
-    "build": "webpack",
+    "build": "tsc",
     "test": "jest --config jestconfig.json"
   },
   "files": [
@@ -27,17 +30,13 @@
     "@types/node": "^10.5.5",
     "@typescript-eslint/eslint-plugin": "2.24.0",
     "@typescript-eslint/parser": "^2.29.0",
-    "clean-webpack-plugin": "^1.0.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-airbnb-typescript": "^7.2.1",
     "eslint-plugin-import": "2.20.1",
     "eslint-plugin-jest": "^23.8.2",
     "jest": "^23.4.2",
-    "ts-jest": "^23.0.1",
-    "ts-loader": "^5.3.3",
-    "typescript": "^3.8.3",
-    "webpack": "^4.28.1",
-    "webpack-cli": "^3.3.11"
+    "ts-jest": "23.10.0",
+    "typescript": "^3.8.3"
   }
 }
